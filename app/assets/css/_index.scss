@@ -1,20 +1,173 @@
-h1 {
-  font-size: 10px;
-  color: blue;
+.hero-section {
+  color: #343d4f;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .hero-img-wp {
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
-button {
-  color: blue;
-  background-color: red;
-  font-size: 14px;
+.search-wp {
+  margin-bottom: 2rem;
+  
+  .search-inner-wp {
+    border: 2px solid $bg-color;
+    padding: 1rem;
+    
+    .search-title {
+      color: $main-blue-color;
+      font-size: 2.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .description {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .search {
+      position: relative;
+      color: #aaa;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+
+      input {
+        width: 28rem;
+        height: 3.2rem;
+        background: #fcfcfc;
+        border: 1px solid #aaa;
+        padding: 1rem;
+      }
+
+      .fa-search {
+        color: $main-blue-color;
+        font-size: 1.8rem;
+        position: absolute;
+        right: 10px;
+        top: 6px;
+      }
+    }
+
+    .popular-searches-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .popular-searches-text {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .view-all-resources-btn {
+      background-color: #ffffff;
+      border: 2px solid $main-green-color;
+      border-radius: 3px;
+      color: $main-green-color;
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding: 10px 15px;
+    }
+  }
+
 }
 
+.my-bookmarks-wp {
+  margin-bottom: 2rem;
+  .bookmarks-inner-wp {
+    border: 2px solid $bg-color;
+    padding: 1rem;
 
-.main-content {
-  font-size: 10px;
-  max-width: 1280px;
+    .my-bookmarks-title {
+      color: $main-green-color;
+      font-size: 2.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .description {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .see-bookmarks-btn {
+      background-color: #ffffff;
+      border: 2px solid $main-green-color;
+      border-radius: 3px;
+      color: $main-green-color;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 3rem;
+      padding: 10px 15px;
+    }
+
+    .did-you-know-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .did-you-know-text {
+      font-size: 1.4rem;
+    }
+
+  }
 }
 
-.main-content h1 {
-  font-size: 1rem;
+.hero-blurb-wp {
+
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-sub-title {
+    font-size: 2.1rem;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 2rem;
+  }
+
+  .cta-wp {
+    .search-button {
+      background-color: $main-blue-color;
+      border: none;
+      border-radius: 2px;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-right: 10px;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+
+    .bookmarks-wp {
+      display: inline-block;
+      font-size: 0;
+
+      .bookmarks-btn {
+        background-color: $main-green-color;
+        border: none;
+        border-radius: 2px 0 0 2px;
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 10px;
+        text-transform: uppercase;
+      }
+
+      .my-bookmarks-counter {
+        border: 2px solid $main-green-color;
+        color: $main-green-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 8px;
+      }
+    }
+  }
 }
