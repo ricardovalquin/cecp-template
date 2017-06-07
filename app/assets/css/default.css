@@ -1,6 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  outline: none;
 }
 
 html,
@@ -142,6 +143,7 @@ html {
 }
 
 .hero-section {
+  overflow: hidden;
   color: #343d4f;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -153,6 +155,71 @@ html {
 
 .hero-section .hero-img-wp img {
   width: 100%;
+}
+
+.hero-section .category-title {
+  font-size: 2.5rem;
+}
+
+.hero-section .hero-blurb-wp .hero-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .hero-blurb-wp .hero-sub-title {
+  font-size: 2.1rem;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 2rem;
+}
+
+.hero-section .hero-blurb-wp .cta-wp .search-button {
+  background-color: #00aeef;
+  border: 2px solid #00aeef;
+  border-radius: 2px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.hero-section .hero-blurb-wp .cta-wp .search-button:hover {
+  background-color: #ffffff;
+  color: #00aeef;
+  border: 2px solid #00aeef;
+}
+
+.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp {
+  display: inline-block;
+  font-size: 0;
+}
+
+.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .bookmarks-btn {
+  background-color: #00a7b5;
+  border: 2px solid #00a7b5;
+  border-radius: 2px 0 0 2px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .bookmarks-btn:hover {
+  background-color: #ffffff;
+  color: #00a7b5;
+  border: 2px solid #00a7b5;
+}
+
+.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .my-bookmarks-counter {
+  border: 2px solid #00a7b5;
+  border-left: none;
+  color: #00a7b5;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px;
 }
 
 .search-wp {
@@ -189,6 +256,7 @@ html {
   background: #fcfcfc;
   border: 1px solid #aaa;
   padding: 1rem;
+  outline: none;
 }
 
 .search-wp .search-inner-wp .search .fa-search {
@@ -214,9 +282,15 @@ html {
   border: 2px solid #00a7b5;
   border-radius: 3px;
   color: #00a7b5;
+  cursor: pointer;
   font-size: 1.4rem;
   font-weight: 600;
   padding: 10px 15px;
+}
+
+.search-wp .search-inner-wp .view-all-resources-btn:hover {
+  background-color: #00a7b5;
+  color: #ffffff;
 }
 
 .my-bookmarks-wp {
@@ -245,10 +319,16 @@ html {
   border: 2px solid #00a7b5;
   border-radius: 3px;
   color: #00a7b5;
+  cursor: pointer;
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 3rem;
   padding: 10px 15px;
+}
+
+.my-bookmarks-wp .bookmarks-inner-wp .see-bookmarks-btn:hover {
+  background-color: #00a7b5;
+  color: #ffffff;
 }
 
 .my-bookmarks-wp .bookmarks-inner-wp .did-you-know-title {
@@ -260,53 +340,84 @@ html {
   font-size: 1.4rem;
 }
 
-.hero-blurb-wp .hero-title {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+.categories-section {
+  background-color: #f1f1f1;
 }
 
-.hero-blurb-wp .hero-sub-title {
-  font-size: 2.1rem;
-  font-weight: 300;
-  line-height: 26px;
-  margin-bottom: 2rem;
+.categories-section .category-section-title {
+  font-size: 2.2rem;
 }
 
-.hero-blurb-wp .cta-wp .search-button {
-  background-color: #00aeef;
-  border: none;
-  border-radius: 2px;
-  color: #ffffff;
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-right: 10px;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.hero-blurb-wp .cta-wp .bookmarks-wp {
-  display: inline-block;
-  font-size: 0;
-}
-
-.hero-blurb-wp .cta-wp .bookmarks-wp .bookmarks-btn {
-  background-color: #00a7b5;
-  border: none;
-  border-radius: 2px 0 0 2px;
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.hero-blurb-wp .cta-wp .bookmarks-wp .my-bookmarks-counter {
+.categories-section .section-underline {
   border: 2px solid #00a7b5;
-  color: #00a7b5;
-  font-size: 1.5rem;
+  margin: 2rem 0;
+  width: 12rem;
+}
+
+.categories-section .category-section-description {
+  color: #aaa;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.categories-section .categories-wp {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.categories-section .category-link-wp {
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+}
+
+.categories-section .category-link-wp .category, .categories-section .category-link-wp .ceo, .categories-section .category-link-wp .communications, .categories-section .category-link-wp .evaluation, .categories-section .category-link-wp .organizational, .categories-section .category-link-wp .programs, .categories-section .category-link-wp .lorem {
+  color: #000000;
+  border-radius: 5px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.categories-section .category-link-wp .category .category-title, .categories-section .category-link-wp .ceo .category-title, .categories-section .category-link-wp .communications .category-title, .categories-section .category-link-wp .evaluation .category-title, .categories-section .category-link-wp .organizational .category-title, .categories-section .category-link-wp .programs .category-title, .categories-section .category-link-wp .lorem .category-title {
+  font-size: 1.6rem;
   font-weight: 600;
-  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+.categories-section .category-link-wp .category .category-description, .categories-section .category-link-wp .ceo .category-description, .categories-section .category-link-wp .communications .category-description, .categories-section .category-link-wp .evaluation .category-description, .categories-section .category-link-wp .organizational .category-description, .categories-section .category-link-wp .programs .category-description, .categories-section .category-link-wp .lorem .category-description {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.categories-section .category-link-wp .ceo {
+  background-color: #00aeef;
+  color: #ffffff;
+}
+
+.categories-section .category-link-wp .communications {
+  background-color: #00659d;
+  color: #ffffff;
+}
+
+.categories-section .category-link-wp .evaluation {
+  background-color: #ee7722;
+  color: #ffffff;
+}
+
+.categories-section .category-link-wp .organizational {
+  background-color: #00b6c9;
+  color: #ffffff;
+}
+
+.categories-section .category-link-wp .programs {
+  background-color: #ffce34;
+  color: #ffffff;
+}
+
+.categories-section .category-link-wp .lorem {
+  background-color: #b6006a;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=default.css.map */

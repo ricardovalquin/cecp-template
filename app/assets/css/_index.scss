@@ -1,4 +1,6 @@
+//__________________ hero section
 .hero-section {
+  overflow: hidden;
   color: #343d4f;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -8,6 +10,76 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  .category-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-blurb-wp {
+
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-sub-title {
+      font-size: 2.1rem;
+      font-weight: 300;
+      line-height: 26px;
+      margin-bottom: 2rem;
+    }
+
+    .cta-wp {
+      .search-button {
+        background-color: $main-blue-color;
+        border: 2px solid $main-blue-color;
+        border-radius: 2px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-right: 10px;
+        padding: 10px;
+
+        &:hover {
+          background-color: #ffffff;
+          color: $main-blue-color;
+          border: 2px solid $main-blue-color;
+        }
+      }
+
+      .bookmarks-wp {
+        display: inline-block;
+        font-size: 0;
+
+        .bookmarks-btn {
+          background-color: $main-green-color;
+          border: 2px solid $main-green-color;
+          border-radius: 2px 0 0 2px;
+          color: #ffffff;
+          font-size: 1.5rem;
+          font-weight: 600;
+          padding: 10px;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: #ffffff;
+            color: $main-green-color;
+            border: 2px solid $main-green-color;
+          }
+        }
+
+        .my-bookmarks-counter {
+          border: 2px solid $main-green-color;
+          border-left: none;
+          color: $main-green-color;
+          font-size: 1.5rem;
+          font-weight: 600;
+          padding: 10px;
+        }
+      }
     }
   }
 }
@@ -43,6 +115,7 @@
         background: #fcfcfc;
         border: 1px solid #aaa;
         padding: 1rem;
+        outline: none;
       }
 
       .fa-search {
@@ -69,9 +142,15 @@
       border: 2px solid $main-green-color;
       border-radius: 3px;
       color: $main-green-color;
+      cursor: pointer;
       font-size: 1.4rem;
       font-weight: 600;
       padding: 10px 15px;
+
+      &:hover {
+        background-color: $main-green-color;
+        color: #ffffff;
+      }
     }
   }
 
@@ -100,10 +179,16 @@
       border: 2px solid $main-green-color;
       border-radius: 3px;
       color: $main-green-color;
+      cursor: pointer;
       font-size: 1.4rem;
       font-weight: 600;
       margin-bottom: 3rem;
       padding: 10px 15px;
+
+      &:hover {
+        background-color: $main-green-color;
+        color: #ffffff;
+      }
     }
 
     .did-you-know-title {
@@ -118,56 +203,105 @@
   }
 }
 
-.hero-blurb-wp {
 
-  .hero-title {
-    font-size: 3rem;
+//__________________ categories section
+
+
+.categories-section {
+  background-color: $bg-color;
+
+  .category-section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-underline {
+    border: 2px solid $main-green-color;
+    margin: 2rem 0;
+    width: 12rem;
+  }
+
+  .category-section-description {
+    color: #aaa;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
     margin-bottom: 2rem;
   }
 
-  .hero-sub-title {
-    font-size: 2.1rem;
-    font-weight: 300;
-    line-height: 26px;
+  .categories-wp {
+    width: 100%;
     margin-bottom: 2rem;
   }
 
-  .cta-wp {
-    .search-button {
+  .category-link-wp {
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+
+    .category {
+      color: #000000;
+      border-radius: 5px;
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+
+      .category-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .category-description {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    .ceo {
+      @extend .category;
       background-color: $main-blue-color;
-      border: none;
-      border-radius: 2px;
       color: #ffffff;
-      display: inline-block;
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-right: 10px;
-      padding: 10px;
-      text-transform: uppercase;
     }
 
-    .bookmarks-wp {
-      display: inline-block;
-      font-size: 0;
-
-      .bookmarks-btn {
-        background-color: $main-green-color;
-        border: none;
-        border-radius: 2px 0 0 2px;
-        color: #ffffff;
-        font-size: 1.5rem;
-        font-weight: 600;
-        padding: 10px;
-        text-transform: uppercase;
-      }
-
-      .my-bookmarks-counter {
-        border: 2px solid $main-green-color;
-        color: $main-green-color;
-        font-size: 1.5rem;
-        font-weight: 600;
-        padding: 8px;
-      }
+    .communications {
+      @extend .category;
+      background-color: $category-dark-blue;
+      color: #ffffff;
     }
+
+    .evaluation {
+      @extend .category;
+      background-color: $category-orange;
+      color: #ffffff;
+    }
+
+    .organizational {
+      @extend .category;
+      background-color: $category-green;
+      color: #ffffff;
+    }
+
+    .programs {
+      @extend .category;
+      background-color: $category-yellow;
+      color: #ffffff;
+    }
+
+    .lorem {
+      @extend .category;
+      background-color: $category-magenta;
+      color: #ffffff;
+    }
+
   }
+
+
 }
+
+
+
+
+
+
+
+
+
+
