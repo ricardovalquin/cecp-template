@@ -135,7 +135,7 @@ html {
 @media screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10px;
   }
 }
 
@@ -156,6 +156,12 @@ html {
   color: #343d4f;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 5.4rem;
+  }
 }
 
 .hero-section .hero-switchable-wp {
@@ -198,16 +204,22 @@ html {
 
 @media screen and (min-width: 768px) {
   .hero-section .hero-blurb-wp .hero-title {
-    font-size: 3.5rem;
-    line-height: 4rem;
+    line-height: 3.7rem;
+    margin-bottom: 3rem;
   }
 }
 
 .hero-section .hero-blurb-wp .hero-sub-title {
   font-size: 2.1rem;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 2.6rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section .hero-blurb-wp .hero-sub-title {
+    line-height: 2.8rem;
+  }
 }
 
 .hero-section .hero-blurb-wp .cta-wp .search-button {
@@ -423,6 +435,13 @@ html {
 
 .category-section-title {
   font-size: 2.2rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .category-section-title {
+    font-size: 2.6rem;
+  }
 }
 
 .section-underline {
@@ -431,9 +450,21 @@ html {
   width: 12rem;
 }
 
+@media screen and (min-width: 768px) {
+  .section-underline {
+    margin: 2rem 0 3.6rem;
+  }
+}
+
 .categories-section {
   background-color: #f1f1f1;
   padding-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .categories-section {
+    padding-top: 5rem;
+  }
 }
 
 .categories-section .category-section-description {
@@ -443,9 +474,22 @@ html {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .categories-section .category-section-description {
+    margin-bottom: 3rem;
+  }
+}
+
 .categories-section .categories-wp {
   padding-bottom: 3rem;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .categories-section .categories-wp {
+    padding-bottom: 4rem;
+    text-align: center;
+  }
 }
 
 .categories-section .category-link-wp {
@@ -461,6 +505,19 @@ html {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .categories-section .category-link-wp .category, .categories-section .category-link-wp .ceo, .categories-section .category-link-wp .communications, .categories-section .category-link-wp .evaluation, .categories-section .category-link-wp .organizational, .categories-section .category-link-wp .programs, .categories-section .category-link-wp .lorem {
+    display: inline-block;
+    text-align: left;
+    padding: 1rem;
+    width: 48%;
+    vertical-align: top;
+  }
+  .categories-section .category-link-wp .category:nth-child(odd), .categories-section .category-link-wp .ceo:nth-child(odd), .categories-section .category-link-wp .communications:nth-child(odd), .categories-section .category-link-wp .evaluation:nth-child(odd), .categories-section .category-link-wp .organizational:nth-child(odd), .categories-section .category-link-wp .programs:nth-child(odd), .categories-section .category-link-wp .lorem:nth-child(odd) {
+    margin-right: 1.4rem;
+  }
+}
+
 .categories-section .category-link-wp .category:hover, .categories-section .category-link-wp .ceo:hover, .categories-section .category-link-wp .communications:hover, .categories-section .category-link-wp .evaluation:hover, .categories-section .category-link-wp .organizational:hover, .categories-section .category-link-wp .programs:hover, .categories-section .category-link-wp .lorem:hover {
   background-color: #f1f1f1;
 }
@@ -470,12 +527,27 @@ html {
   font-weight: 600;
   line-height: 2rem;
   margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  .categories-section .category-link-wp .category .category-title, .categories-section .category-link-wp .ceo .category-title, .categories-section .category-link-wp .communications .category-title, .categories-section .category-link-wp .evaluation .category-title, .categories-section .category-link-wp .organizational .category-title, .categories-section .category-link-wp .programs .category-title, .categories-section .category-link-wp .lorem .category-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .categories-section .category-link-wp .category .category-description, .categories-section .category-link-wp .ceo .category-description, .categories-section .category-link-wp .communications .category-description, .categories-section .category-link-wp .evaluation .category-description, .categories-section .category-link-wp .organizational .category-description, .categories-section .category-link-wp .programs .category-description, .categories-section .category-link-wp .lorem .category-description {
   font-size: 1.6rem;
   line-height: 2.2rem;
   word-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  .categories-section .category-link-wp .category .category-description, .categories-section .category-link-wp .ceo .category-description, .categories-section .category-link-wp .communications .category-description, .categories-section .category-link-wp .evaluation .category-description, .categories-section .category-link-wp .organizational .category-description, .categories-section .category-link-wp .programs .category-description, .categories-section .category-link-wp .lorem .category-description {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .categories-section .category-link-wp .ceo {
@@ -540,10 +612,21 @@ html {
 
 .card {
   background-color: #ffffff;
-  box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 3rem;
   padding: 2rem;
   position: relative;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: inline-block;
+    width: 48%;
+  }
+  .card:nth-child(odd) {
+    margin-right: 2rem;
+  }
 }
 
 .card .tag {
@@ -603,6 +686,14 @@ html {
 .resources-section {
   padding-bottom: 4rem;
   background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 768px) {
+  .resources-section .cards-wp {
+    font-size: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=default.css.map */

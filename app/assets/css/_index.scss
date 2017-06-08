@@ -4,6 +4,9 @@
   color: #343d4f;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  @media screen and (min-width: $md-min-width) {
+    padding-bottom: 5.4rem;
+  }
 
   .hero-switchable-wp {
     width: 100%;
@@ -38,16 +41,19 @@
       font-size: 3rem;
       margin-bottom: 2rem;
       @media screen and (min-width: $md-min-width) {
-        font-size: 3.5rem;
-        line-height: 4rem;
+        line-height: 3.7rem;
+        margin-bottom: 3rem;
       }
     }
 
     .hero-sub-title {
       font-size: 2.1rem;
       font-weight: 300;
-      line-height: 26px;
+      line-height: 2.6rem;
       margin-bottom: 2rem;
+      @media screen and (min-width: $md-min-width) {
+        line-height: 2.8rem;
+      }
     }
 
     .cta-wp {
@@ -250,12 +256,19 @@
 
 .category-section-title {
   font-size: 2.2rem;
+  font-weight: 300;
+  @media screen and (min-width: $md-min-width) {
+    font-size: 2.6rem;
+  }
 }
 
 .section-underline {
   border: 2px solid $main-green-color;
   margin: 3rem 0;
   width: 12rem;
+  @media screen and (min-width: $md-min-width) {
+    margin: 2rem 0 3.6rem;
+  }
 }
 //__________________ categories section
 
@@ -263,17 +276,27 @@
 .categories-section {
   background-color: $bg-color;
   padding-top: 3rem;
+  @media screen and (min-width: $md-min-width) {
+    padding-top: 5rem;
+  }
 
   .category-section-description {
     color: #aaa;
     font-size: 1.6rem;
     line-height: 2.5rem;
     margin-bottom: 2rem;
+    @media screen and (min-width: $md-min-width) {
+      margin-bottom: 3rem;
+    }
   }
 
   .categories-wp {
     padding-bottom: 3rem;
     width: 100%;
+    @media screen and (min-width: $md-min-width) {
+      padding-bottom: 4rem;
+      text-align: center;
+    }
   }
 
   .category-link-wp {
@@ -286,6 +309,17 @@
       border-radius: 5px;
       padding: 1.5rem 1rem;
       margin-bottom: 1rem;
+      @media screen and (min-width: $md-min-width) {
+        display: inline-block;
+        text-align: left;
+        padding: 1rem;
+        width: 48%;
+        vertical-align: top;
+
+        &:nth-child(odd) {
+          margin-right: 1.4rem;
+        }
+      }
 
       &:hover {
         background-color: $bg-color;
@@ -296,12 +330,21 @@
         font-weight: 600;
         line-height: 2rem;
         margin-bottom: 1rem;
+        word-wrap: break-word;
+        @media screen and (min-width: $md-min-width) {
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+        }
       }
 
       .category-description {
         font-size: 1.6rem;
         line-height: 2.2rem;
         word-wrap: break-word;
+        @media screen and (min-width: $md-min-width) {
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+        }
       }
     }
 
@@ -371,12 +414,22 @@
 
 .card {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 3rem;
   padding: 2rem;
   position: relative;
+  text-align: left;
+
+  @media screen and (min-width: $md-min-width) {
+    display: inline-block;
+    width: 48%;
+
+    &:nth-child(odd) {
+      margin-right: 2rem;
+    }
+  }
 
 
   .tag {
@@ -440,8 +493,11 @@
   background-color: $bg-color;
 
   .cards-wp {
-    //max-width: 480px;
-    //margin: 0 auto;
+    @media screen and (min-width: $md-min-width) {
+      font-size: 0;
+      padding-top: 1.5rem;
+      text-align: center;
+    }
   }
 }
 
