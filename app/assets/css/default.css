@@ -622,11 +622,40 @@ html {
 @media screen and (min-width: 768px) {
   .card {
     display: inline-block;
+    padding: 1.5rem;
+    vertical-align: top;
     width: 48%;
   }
   .card:nth-child(odd) {
     margin-right: 2rem;
   }
+}
+
+.card .card-text-wp {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .card .card-text-wp {
+    display: inline-block;
+    padding-left: 2rem;
+    width: 60%;
+  }
+}
+
+.card .card-img-wp {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .card .card-img-wp {
+    display: inline-block;
+    width: 40%;
+  }
+}
+
+.card .card-img-wp img {
+  width: 100%;
 }
 
 .card .tag {
@@ -659,11 +688,26 @@ html {
   word-wrap: break-word;
 }
 
+@media screen and (min-width: 768px) {
+  .card .card-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    padding-right: 0;
+  }
+}
+
 .card .card-text {
   font-size: 1.6rem;
   margin-bottom: 2rem;
   line-height: 2.2rem;
   word-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  .card .card-text {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .card .view-card {

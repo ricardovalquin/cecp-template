@@ -424,6 +424,8 @@
 
   @media screen and (min-width: $md-min-width) {
     display: inline-block;
+    padding: 1.5rem;
+    vertical-align: top;
     width: 48%;
 
     &:nth-child(odd) {
@@ -431,6 +433,26 @@
     }
   }
 
+  .card-text-wp {
+    display: block;
+    @media screen and (min-width: $md-min-width) {
+      display: inline-block;
+      padding-left: 2rem;
+      width: 60%;
+    }
+  }
+
+  .card-img-wp {
+    display: none;
+    @media screen and (min-width: $md-min-width) {
+      display: inline-block;
+      width: 40%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 
   .tag {
     background-color: $main-green-color;
@@ -460,6 +482,11 @@
     margin-bottom: 2rem;
     padding-right: 4rem;
     word-wrap: break-word;
+    @media screen and (min-width: $md-min-width) {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      padding-right: 0;
+    }
   }
 
   .card-text {
@@ -467,6 +494,10 @@
     margin-bottom: 2rem;
     line-height: 2.2rem;
     word-wrap: break-word;
+    @media screen and (min-width: $md-min-width) {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
   }
 
   .view-card {
