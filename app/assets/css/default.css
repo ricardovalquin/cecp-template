@@ -340,18 +340,19 @@ html {
   font-size: 1.4rem;
 }
 
-.categories-section {
-  background-color: #f1f1f1;
-}
-
-.categories-section .category-section-title {
+.category-section-title {
   font-size: 2.2rem;
 }
 
-.categories-section .section-underline {
+.section-underline {
   border: 2px solid #00a7b5;
-  margin: 2rem 0;
+  margin: 3rem 0;
   width: 12rem;
+}
+
+.categories-section {
+  background-color: #f1f1f1;
+  padding-top: 3rem;
 }
 
 .categories-section .category-section-description {
@@ -363,7 +364,7 @@ html {
 
 .categories-section .categories-wp {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .categories-section .category-link-wp {
@@ -379,45 +380,141 @@ html {
   margin-bottom: 1rem;
 }
 
+.categories-section .category-link-wp .category:hover, .categories-section .category-link-wp .ceo:hover, .categories-section .category-link-wp .communications:hover, .categories-section .category-link-wp .evaluation:hover, .categories-section .category-link-wp .organizational:hover, .categories-section .category-link-wp .programs:hover, .categories-section .category-link-wp .lorem:hover {
+  background-color: #f1f1f1;
+}
+
 .categories-section .category-link-wp .category .category-title, .categories-section .category-link-wp .ceo .category-title, .categories-section .category-link-wp .communications .category-title, .categories-section .category-link-wp .evaluation .category-title, .categories-section .category-link-wp .organizational .category-title, .categories-section .category-link-wp .programs .category-title, .categories-section .category-link-wp .lorem .category-title {
   font-size: 1.6rem;
   font-weight: 600;
+  line-height: 2rem;
   margin-bottom: 1rem;
 }
 
 .categories-section .category-link-wp .category .category-description, .categories-section .category-link-wp .ceo .category-description, .categories-section .category-link-wp .communications .category-description, .categories-section .category-link-wp .evaluation .category-description, .categories-section .category-link-wp .organizational .category-description, .categories-section .category-link-wp .programs .category-description, .categories-section .category-link-wp .lorem .category-description {
   font-size: 1.6rem;
   line-height: 2.2rem;
+  word-wrap: break-word;
 }
 
 .categories-section .category-link-wp .ceo {
   background-color: #00aeef;
+  border: 2px solid #00aeef;
   color: #ffffff;
+}
+
+.categories-section .category-link-wp .ceo:hover {
+  color: #00aeef;
 }
 
 .categories-section .category-link-wp .communications {
   background-color: #00659d;
+  border: 2px solid #00659d;
   color: #ffffff;
+}
+
+.categories-section .category-link-wp .communications:hover {
+  color: #00659d;
 }
 
 .categories-section .category-link-wp .evaluation {
   background-color: #ee7722;
+  border: 2px solid #ee7722;
   color: #ffffff;
+}
+
+.categories-section .category-link-wp .evaluation:hover {
+  color: #ee7722;
 }
 
 .categories-section .category-link-wp .organizational {
   background-color: #00b6c9;
+  border: 2px solid #00b6c9;
   color: #ffffff;
+}
+
+.categories-section .category-link-wp .organizational:hover {
+  color: #00b6c9;
 }
 
 .categories-section .category-link-wp .programs {
   background-color: #ffce34;
+  border: 2px solid #ffce34;
   color: #ffffff;
+}
+
+.categories-section .category-link-wp .programs:hover {
+  color: #ffce34;
 }
 
 .categories-section .category-link-wp .lorem {
   background-color: #b6006a;
+  border: 2px solid #b6006a;
   color: #ffffff;
+}
+
+.categories-section .category-link-wp .lorem:hover {
+  color: #b6006a;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.card .tag {
+  background-color: #00a7b5;
+  border-radius: 50%;
+  height: 45px;
+  position: absolute;
+  right: 10px;
+  top: -1.5rem;
+  width: 45px;
+}
+
+.card .tag i {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+}
+
+.card .card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+  padding-right: 4rem;
+  word-wrap: break-word;
+}
+
+.card .card-text {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 2.2rem;
+  word-wrap: break-word;
+}
+
+.card .view-card {
+  background-color: #00aeef;
+  border: 2px solid #00aeef;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 7px 10px;
+  margin-bottom: 5px;
+}
+
+.resources-section {
+  padding-bottom: 4rem;
 }
 
 /*# sourceMappingURL=default.css.map */

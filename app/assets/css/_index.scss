@@ -204,21 +204,23 @@
 }
 
 
+//__________________ sections
+
+.category-section-title {
+  font-size: 2.2rem;
+}
+
+.section-underline {
+  border: 2px solid $main-green-color;
+  margin: 3rem 0;
+  width: 12rem;
+}
 //__________________ categories section
 
 
 .categories-section {
   background-color: $bg-color;
-
-  .category-section-title {
-    font-size: 2.2rem;
-  }
-
-  .section-underline {
-    border: 2px solid $main-green-color;
-    margin: 2rem 0;
-    width: 12rem;
-  }
+  padding-top: 3rem;
 
   .category-section-description {
     color: #aaa;
@@ -229,7 +231,7 @@
 
   .categories-wp {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .category-link-wp {
@@ -243,57 +245,150 @@
       padding: 1.5rem 1rem;
       margin-bottom: 1rem;
 
+      &:hover {
+        background-color: $bg-color;
+      }
+
       .category-title {
         font-size: 1.6rem;
         font-weight: 600;
+        line-height: 2rem;
         margin-bottom: 1rem;
       }
 
       .category-description {
         font-size: 1.6rem;
         line-height: 2.2rem;
+        word-wrap: break-word;
       }
     }
 
     .ceo {
       @extend .category;
       background-color: $main-blue-color;
+      border: 2px solid $main-blue-color;
       color: #ffffff;
+      &:hover {
+        color: $main-blue-color;
+      }
     }
 
     .communications {
       @extend .category;
       background-color: $category-dark-blue;
+      border: 2px solid $category-dark-blue;
       color: #ffffff;
+      &:hover {
+        color: $category-dark-blue;
+      }
     }
 
     .evaluation {
       @extend .category;
       background-color: $category-orange;
+      border: 2px solid $category-orange;
       color: #ffffff;
+      &:hover {
+        color: $category-orange;
+      }
     }
 
     .organizational {
       @extend .category;
       background-color: $category-green;
+      border: 2px solid $category-green;
       color: #ffffff;
+      &:hover {
+        color: $category-green;
+      }
     }
 
     .programs {
       @extend .category;
       background-color: $category-yellow;
+      border: 2px solid $category-yellow;
       color: #ffffff;
+      &:hover {
+        color: $category-yellow;
+      }
     }
 
     .lorem {
       @extend .category;
       background-color: $category-magenta;
+      border: 2px solid $category-magenta;
       color: #ffffff;
+      &:hover {
+        color: $category-magenta;
+      }
     }
+  }
+}
 
+//__________________ popular resources section
+
+.card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 12px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3rem;
+  padding: 2rem;
+  position: relative;
+
+
+  .tag {
+    background-color: $main-green-color;
+    border-radius: 50%;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    top: -1.5rem;
+    width: 45px;
+
+    i {
+      color: #ffffff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      left: 50%;
+      margin-left: -12px;
+      margin-top: -12px;
+      position: absolute;
+      top: 50%;
+    }
   }
 
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+    padding-right: 4rem;
+    word-wrap: break-word;
+  }
 
+  .card-text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 2.2rem;
+    word-wrap: break-word;
+  }
+
+  .view-card {
+    background-color: $main-blue-color;
+    border: 2px solid $main-blue-color;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 7px 10px;
+    margin-bottom: 5px;
+  }
+
+}
+
+.resources-section {
+  padding-bottom: 4rem;
 }
 
 
