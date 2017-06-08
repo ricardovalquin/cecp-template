@@ -6,10 +6,17 @@ html {font-size: 62.5%;}
 }
 
 .container {
+  font-size: 0;
   padding: 0 10px;
 
   @media screen and (min-width: $sm-min-width) {
-    padding: 0 54px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: $md-min-width) {
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   @media screen and (min-width: $lg-min-width) {
