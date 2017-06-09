@@ -115,14 +115,10 @@ html {
   font-size: 62.5%;
 }
 
-.main-content {
-  font-size: 10px;
-  max-width: 1280px;
-}
-
 .container {
   font-size: 0;
   padding: 0 10px;
+  position: relative;
 }
 
 @media screen and (min-width: 544px) {
@@ -141,7 +137,9 @@ html {
 
 @media screen and (min-width: 992px) {
   .container {
-    padding: 0 83px;
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1280px;
   }
 }
 
@@ -170,15 +168,36 @@ html {
 
 @media screen and (min-width: 768px) {
   .hero-section .hero-switchable-wp {
-    width: 45%;
+    max-height: 260px;
+    max-width: 345px;
     position: absolute;
     right: 10px;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-section .hero-switchable-wp {
+    right: 8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section .hero-switchable-wp {
+    right: 12rem;
   }
 }
 
 .hero-section .hero-img-wp {
   margin-bottom: 2rem;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section .hero-img-wp {
+    max-height: 260px;
+    max-width: 345px;
+  }
 }
 
 .hero-section .hero-img-wp img {
@@ -192,6 +211,7 @@ html {
 @media screen and (min-width: 768px) {
   .hero-section .hero-blurb-wp {
     display: inline-block;
+    height: 373px;
     padding-right: 5rem;
     width: 60%;
   }
@@ -325,9 +345,10 @@ html {
 
 .search-wp .search-inner-wp .search {
   position: relative;
-  color: #aaa;
+  color: #7e8890;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+  max-width: 280px;
 }
 
 .search-wp .search-inner-wp .search input {
@@ -468,7 +489,7 @@ html {
 }
 
 .categories-section .category-section-description {
-  color: #aaa;
+  color: #7e8890;
   font-size: 1.6rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
@@ -515,6 +536,12 @@ html {
   }
   .categories-section .category-link-wp .category:nth-child(odd), .categories-section .category-link-wp .ceo:nth-child(odd), .categories-section .category-link-wp .communications:nth-child(odd), .categories-section .category-link-wp .evaluation:nth-child(odd), .categories-section .category-link-wp .organizational:nth-child(odd), .categories-section .category-link-wp .programs:nth-child(odd), .categories-section .category-link-wp .lorem:nth-child(odd) {
     margin-right: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .categories-section .category-link-wp .category, .categories-section .category-link-wp .ceo, .categories-section .category-link-wp .communications, .categories-section .category-link-wp .evaluation, .categories-section .category-link-wp .organizational, .categories-section .category-link-wp .programs, .categories-section .category-link-wp .lorem {
+    width: 31%;
   }
 }
 
@@ -651,6 +678,8 @@ html {
   .card .card-img-wp {
     display: inline-block;
     height: 170px;
+    max-width: 135px;
+    max-height: 170px;
     vertical-align: top;
     width: 40%;
   }
