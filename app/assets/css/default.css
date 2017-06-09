@@ -242,7 +242,7 @@ html {
   }
 }
 
-.hero-section .hero-blurb-wp .cta-wp .search-button {
+.cta-wp .search-button {
   background-color: #00aeef;
   border: 2px solid #00aeef;
   border-radius: 2px;
@@ -255,29 +255,29 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section .hero-blurb-wp .cta-wp .search-button {
+  .cta-wp .search-button {
     font-size: 1.7rem;
   }
 }
 
-.hero-section .hero-blurb-wp .cta-wp .search-button:hover {
+.cta-wp .search-button:hover {
   background-color: #ffffff;
   color: #00aeef;
   border: 2px solid #00aeef;
 }
 
-.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp {
+.cta-wp .bookmarks-wp {
   display: inline-block;
   font-size: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section .hero-blurb-wp .cta-wp .bookmarks-wp {
+  .cta-wp .bookmarks-wp {
     margin-top: 10px;
   }
 }
 
-.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .bookmarks-btn {
+.cta-wp .bookmarks-wp .bookmarks-btn {
   background-color: #00a7b5;
   border: 2px solid #00a7b5;
   border-radius: 2px 0 0 2px;
@@ -289,18 +289,18 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .bookmarks-btn {
+  .cta-wp .bookmarks-wp .bookmarks-btn {
     font-size: 1.7rem;
   }
 }
 
-.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .bookmarks-btn:hover {
+.cta-wp .bookmarks-wp .bookmarks-btn:hover {
   background-color: #ffffff;
   color: #00a7b5;
   border: 2px solid #00a7b5;
 }
 
-.hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .my-bookmarks-counter {
+.cta-wp .bookmarks-wp .my-bookmarks-counter {
   border: 2px solid #00a7b5;
   border-left: none;
   color: #00a7b5;
@@ -310,7 +310,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section .hero-blurb-wp .cta-wp .bookmarks-wp .my-bookmarks-counter {
+  .cta-wp .bookmarks-wp .my-bookmarks-counter {
     font-size: 1.7rem;
     padding: 10.5px;
   }
