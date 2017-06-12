@@ -27,6 +27,10 @@ html {font-size: 62.5%;}
   }
 }
 
+ul {
+  list-style-type: none;
+}
+
 //colors:
 
 //landing-page
@@ -39,5 +43,6 @@ $category-green: #00b6c9;
 $category-yellow: #ffce34;
 $category-magenta: #b6006a;
 $light-text-color: #7e8890;
+$list-text-color: #9ea5ab;
 
 

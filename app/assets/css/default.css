@@ -149,6 +149,10 @@ html {
   }
 }
 
+ul {
+  list-style-type: none;
+}
+
 .hero-section {
   overflow: hidden;
   color: #343d4f;
@@ -776,6 +780,190 @@ html {
     padding-top: 1.5rem;
     text-align: center;
   }
+}
+
+.category-title-section .category-title {
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.category-title-section .title-text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.category-title-section .cta-wp {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.listing-resources-section {
+  padding: 2rem 0 3rem;
+  background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 2rem;
+    vertical-align: top;
+    width: 25rem;
+  }
+}
+
+.listing-resources-section .filters-section .search-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section .search-title {
+    font-size: 1.7rem;
+  }
+}
+
+.listing-resources-section .filters-section .search {
+  color: #7e8890;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  max-width: 19rem;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section .search {
+    margin-bottom: 3rem;
+    max-width: 21rem;
+  }
+}
+
+.listing-resources-section .filters-section .search input {
+  width: 19rem;
+  height: 3.8rem;
+  background: #f1f1f1;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  outline: none;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section .search input {
+    background-color: #ffffff;
+    width: 21rem;
+  }
+}
+
+.listing-resources-section .filters-section .search .fa-search {
+  color: #00aeef;
+  font-size: 1.8rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.listing-resources-section .filters-section .filters-list {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: right;
+  width: calc(100% - 19rem);
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section .filters-list {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section .filters-list .filters-btn {
+    display: none;
+  }
+}
+
+.listing-resources-section .filters-section .filters-list:hover {
+  cursor: pointer;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section .filters-list .filters-wp {
+    display: block;
+  }
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .refine-title {
+  margin-bottom: 1.6rem;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filter-block-header {
+  margin-bottom: 1rem;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters {
+  color: #7e8890;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters li.filter {
+  color: #9ea5ab;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters li.filter:hover {
+  color: #00a7b5;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .list-items-section {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 320px);
+  }
+}
+
+.listing-resources-section .list-items-section .cards-wp {
+  margin-bottom: 2rem;
+}
+
+.listing-resources-section .list-items-section .cards-wp .card {
+  margin-bottom: 2rem;
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.listing-resources-section .list-items-section .cards-wp .card .tag {
+  right: -5px;
+}
+
+.listing-resources-section .list-items-section .cards-wp .card .card-img-wp {
+  display: inline-block;
+  max-width: 135px;
+  max-height: 135px;
+  vertical-align: top;
+  width: 40%;
+}
+
+.listing-resources-section .list-items-section .cards-wp .card .card-text-wp {
+  display: inline-block;
+  padding-left: 2rem;
+  width: 60%;
+}
+
+.listing-resources-section .list-items-section .cards-wp .card .card-text-wp .card-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=default.css.map */
