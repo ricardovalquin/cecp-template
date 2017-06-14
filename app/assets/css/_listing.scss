@@ -305,7 +305,6 @@
     }
 
     .cards-wp {
-      margin-bottom: 2rem;
 
       .card {
         margin-bottom: 2rem;
@@ -335,9 +334,39 @@
         }
       }
     }
+    .pagination-wp {
+      font-size: 1.4rem;
+      @media screen and (min-width: $lg-min-width) {
+        font-size: 1.6rem;
+      }
+      margin: 1rem 0;
+      text-align: left;
 
-    .paginator {
+      .pages-list {
 
+        .page {
+          background-color: #ffffff;
+          border: 2px solid $main-green-color;
+          color: $main-green-color;
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          margin-right: 1rem;
+          text-align: center;
+          width: 30px;
+
+          &.active {
+            background-color: $main-green-color;
+            color: #ffffff;
+          }
+
+          &:hover {
+            background-color: $main-green-color;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

@@ -1099,10 +1099,6 @@ ul {
   }
 }
 
-.listing-resources-section .list-items-section .cards-wp {
-  margin-bottom: 2rem;
-}
-
 .listing-resources-section .list-items-section .cards-wp .card {
   margin-bottom: 2rem;
   padding: 1.5rem 1.5rem 1rem;
@@ -1130,6 +1126,41 @@ ul {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   padding-right: 0;
+}
+
+.listing-resources-section .list-items-section .pagination-wp {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .list-items-section .pagination-wp {
+    font-size: 1.6rem;
+  }
+}
+
+.listing-resources-section .list-items-section .pagination-wp .pages-list .page {
+  background-color: #ffffff;
+  border: 2px solid #00a7b5;
+  color: #00a7b5;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 1rem;
+  text-align: center;
+  width: 30px;
+}
+
+.listing-resources-section .list-items-section .pagination-wp .pages-list .page.active {
+  background-color: #00a7b5;
+  color: #ffffff;
+}
+
+.listing-resources-section .list-items-section .pagination-wp .pages-list .page:hover {
+  background-color: #00a7b5;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=default.css.map */
