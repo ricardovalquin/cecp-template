@@ -91,8 +91,13 @@
         width: 100%;
       }
       .filters-btn {
+        padding: 1rem 0;
         @media screen and (min-width: $lg-min-width) {
           display: none;
+        }
+
+        &:hover {
+          cursor: pointer;
         }
       }
 
@@ -111,6 +116,13 @@
         }
 
         .filter-block {
+          border-bottom: 1px solid $list-text-color;
+          margin-bottom: 2rem;
+          padding-bottom: 2rem;
+
+          &.staff-block {
+            border-bottom: none;
+          }
 
           .filter-block-header {
             margin-bottom: 1rem;
@@ -118,14 +130,168 @@
 
           .filters {
             color: $light-text-color;
+            font-size: 1.5rem;
+            font-weight: 300;
 
-            li.filter {
+            .filter {
               color: $list-text-color;
+              line-height: 2rem;
+
+              .title-expander-wp {
+                &:hover {
+                  color: $main-green-color;
+                  i {
+                    color: $main-green-color;
+                  }
+                }
+              }
+
+              .single-filter {
+                max-width: 180px;
+              }
+
+              .filter-expander {
+                float: right;
+                color: $list-text-color;
+              }
+
+              .second-level-filter {
+                display: none;
+                margin-left: 1rem;
+              }
+
+              .second-level-visible {
+                display: block;
+              }
+            }
+
+            .filter, .secondary-filter {
+              line-height: 2.3rem;
+
               &:hover {
+                cursor: pointer;
+
+                .filter-title {
+                  color: $main-green-color;
+                }
+              }
+              .clear-filter {
+                color: transparent;
+              }
+            }
+
+            .secondary-filter {
+              &:hover {
+                .secondary-filter-title {
+                  color: $main-green-color;
+                }
+              }
+            }
+
+            .filter-active {
+              color: $main-green-color;
+
+              .clear-filter {
                 color: $main-green-color;
               }
             }
           }
+        }
+      }
+
+      .filters-wp-visible {
+        display: block;
+        -webkit-box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.19);
+        background-color: white;
+        padding: 2rem;
+        position: absolute;
+        right: 2rem;
+        text-align: left;
+        width: 250px;
+        z-index: 2;
+        @media screen and (min-width: $lg-min-width) {
+          box-shadow: none;
+          padding: 0;
+          position: relative;
+          right: 0;
+          width: 100%;
+          z-index: 0;
+        }
+
+      }
+    }
+
+    .type-filters-list {
+
+      .type-filter {
+        color: $list-text-color;
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+
+        &:hover {
+          color: $main-green-color;
+
+          .filter-icon-wp {
+            background-color: $main-green-color;
+          }
+        }
+
+        .filter-icon-wp {
+          background-color: $list-text-color;
+          border-radius: 50%;
+          display: inline-block;
+          height: 3rem;
+          margin-right: 1rem;
+          position: relative;
+          vertical-align: middle;
+          width: 3rem;
+
+          i {
+            color: #ffffff;
+            font-size: 1.5rem;
+            left: 50%;
+            margin-left: -6px;
+            margin-top: -8px;
+            position: absolute;
+            top: 50%;
+          }
+        }
+
+        .type-filter-text {
+          display: inline-block;
+          margin-right: 5px;
+        }
+
+        .clear-filter {
+          display: none;
+          font-size: 1.75rem;
+        }
+
+        &.filter-active {
+          color: $main-green-color;
+
+          .filter-icon-wp {
+            background-color: $main-green-color;
+          }
+
+          .clear-filter {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .clear-filters-block {
+      padding: 1rem 0;
+
+      &:hover {
+        cursor: pointer;
+
+        .clear-filters-text {
+          color: $main-green-color;
         }
       }
     }
@@ -174,5 +340,4 @@
 
     }
   }
-
 }

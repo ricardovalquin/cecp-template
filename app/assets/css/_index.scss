@@ -89,8 +89,9 @@
 
     &:hover {
       background-color: #ffffff;
-      color: $main-blue-color;
       border: 2px solid $main-blue-color;
+      color: $main-blue-color;
+      cursor: pointer;
     }
   }
 
@@ -116,8 +117,9 @@
 
       &:hover {
         background-color: #ffffff;
-        color: $main-green-color;
         border: 2px solid $main-green-color;
+        color: $main-green-color;
+        cursor: pointer;
       }
     }
 

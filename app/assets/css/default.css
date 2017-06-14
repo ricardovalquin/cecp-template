@@ -266,8 +266,9 @@ ul {
 
 .cta-wp .search-button:hover {
   background-color: #ffffff;
-  color: #00aeef;
   border: 2px solid #00aeef;
+  color: #00aeef;
+  cursor: pointer;
 }
 
 .cta-wp .bookmarks-wp {
@@ -300,8 +301,9 @@ ul {
 
 .cta-wp .bookmarks-wp .bookmarks-btn:hover {
   background-color: #ffffff;
-  color: #00a7b5;
   border: 2px solid #00a7b5;
+  color: #00a7b5;
+  cursor: pointer;
 }
 
 .cta-wp .bookmarks-wp .my-bookmarks-counter {
@@ -885,10 +887,18 @@ ul {
   }
 }
 
+.listing-resources-section .filters-section .filters-list .filters-btn {
+  padding: 1rem 0;
+}
+
 @media screen and (min-width: 992px) {
   .listing-resources-section .filters-section .filters-list .filters-btn {
     display: none;
   }
+}
+
+.listing-resources-section .filters-section .filters-list .filters-btn:hover {
+  cursor: pointer;
 }
 
 .listing-resources-section .filters-section .filters-list:hover {
@@ -909,19 +919,175 @@ ul {
   margin-bottom: 1.6rem;
 }
 
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block {
+  border-bottom: 1px solid #9ea5ab;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block.staff-block {
+  border-bottom: none;
+}
+
 .listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filter-block-header {
   margin-bottom: 1rem;
 }
 
 .listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters {
   color: #7e8890;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
-.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters li.filter {
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter {
+  color: #9ea5ab;
+  line-height: 2rem;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter .title-expander-wp:hover {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter .title-expander-wp:hover i {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter .single-filter {
+  max-width: 180px;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter .filter-expander {
+  float: right;
   color: #9ea5ab;
 }
 
-.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters li.filter:hover {
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter .second-level-filter {
+  display: none;
+  margin-left: 1rem;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter .second-level-visible {
+  display: block;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter, .listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .secondary-filter {
+  line-height: 2.3rem;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter:hover, .listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .secondary-filter:hover {
+  cursor: pointer;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter:hover .filter-title, .listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .secondary-filter:hover .filter-title {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter .clear-filter, .listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .secondary-filter .clear-filter {
+  color: transparent;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .secondary-filter:hover .secondary-filter-title {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter-active {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp .filter-block .filters .filter-active .clear-filter {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .filters-list .filters-wp-visible {
+  display: block;
+  box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.19);
+  background-color: white;
+  padding: 2rem;
+  position: absolute;
+  right: 2rem;
+  text-align: left;
+  width: 250px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-resources-section .filters-section .filters-list .filters-wp-visible {
+    box-shadow: none;
+    padding: 0;
+    position: relative;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter {
+  color: #9ea5ab;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter:hover {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter:hover .filter-icon-wp {
+  background-color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter .filter-icon-wp {
+  background-color: #9ea5ab;
+  border-radius: 50%;
+  display: inline-block;
+  height: 3rem;
+  margin-right: 1rem;
+  position: relative;
+  vertical-align: middle;
+  width: 3rem;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter .filter-icon-wp i {
+  color: #ffffff;
+  font-size: 1.5rem;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter .type-filter-text {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter .clear-filter {
+  display: none;
+  font-size: 1.75rem;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter.filter-active {
+  color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter.filter-active .filter-icon-wp {
+  background-color: #00a7b5;
+}
+
+.listing-resources-section .filters-section .type-filters-list .type-filter.filter-active .clear-filter {
+  display: inline-block;
+}
+
+.listing-resources-section .filters-section .clear-filters-block {
+  padding: 1rem 0;
+}
+
+.listing-resources-section .filters-section .clear-filters-block:hover {
+  cursor: pointer;
+}
+
+.listing-resources-section .filters-section .clear-filters-block:hover .clear-filters-text {
   color: #00a7b5;
 }
 

@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
   <!-- bower:css -->
   <!-- endbower -->
 
@@ -45,24 +49,188 @@
               </div>
               <ul class="filters">
                 <li class="filter">
-                  <span class="filter-title">Necklaces</span> <span class="filter-expander"><i class="fa fa-plus"></i></span>
+                  <div class="title-expander-wp">
+                    <span class="filter-title">CEO Perspectives</span>
+                    <span class="filter-expander"><i class="filter-expanded-icon fa fa-plus"></i></span>
+                  </div>
                   <ul class="second-level-filter">
-                    <li class="secondary-filter"><span class="secondary-filter-title">Some Necklaces </span><i
-                      class="fa fa-close"></i></li>
-                    <li class="secondary-filter"><span class="secondary-filter-title">Some Necklaces </span><i
-                      class="fa fa-close"></i></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Some perspective </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Some perspective </span><span class="clear-filter">x</span></li>
                   </ul>
                 </li>
                 <li class="filter">
-                  <span class="filter-title">Bracelets</span>
+                  <div class="title-expander-wp">
+                    <span class="filter-title">Communications</span>
+                    <span class="filter-expander"><i class="filter-expanded-icon fa fa-plus"></i></span>
+                  </div>
                   <ul class="second-level-filter">
-                    <li class="secondary-filter"><span class="secondary-filter-title">Stretchy </span><i
-                      class="fa fa-close"></i></li>
-                    <li class="secondary-filter"><span class="secondary-filter-title">Wrap </span><i class="fa fa-close"></i>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Communication 1 </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Communication 2 </span><span class="clear-filter">x</span></li>
+                  </ul>
+                </li>
+                <li class="filter">
+                  <div class="title-expander-wp">
+                    <span class="filter-title">Evaluation and Reporting</span>
+                    <span class="filter-expander"><i class="filter-expanded-icon fa fa-plus"></i></span>
+                  </div>
+                  <ul class="second-level-filter">
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">All </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">ESG and Financial Reporting </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span
+                      class="secondary-filter-title">Impact Investing </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span
+                      class="secondary-filter-title">Integrated Reporting </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Giving Numbers Subject Matter and Resources </span><span class="clear-filter">x</span></li>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter">
+                  <div class="title-expander-wp">
+                    <span class="filter-title">Organizational Strategy</span>
+                    <span class="filter-expander"><i class="filter-expanded-icon fa fa-plus"></i></span>
+                  </div>
+                  <ul class="second-level-filter">
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Strategy 1 </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Strategy 2 </span><span class="clear-filter">x</span></li>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter">
+                  <div class="title-expander-wp">
+                    <span class="filter-title">Programs and Policies</span>
+                    <span class="filter-expander"><i class="filter-expanded-icon fa fa-plus"></i></span>
+                  </div>
+                  <ul class="second-level-filter">
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Program </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Policy </span><span class="clear-filter">x</span></li>
                     </li>
                   </ul>
                 </li>
               </ul>
+            </div>
+            <div class="filter-block">
+              <div class="filter-block-header">
+                <h3 class="filter-title">FILTER BY TYPE</h3>
+              </div>
+              <ul class="type-filters-list">
+                <li class="type-filter">
+                  <span class="filter-icon-wp">
+                    <i class="filter-icon fa fa-file"></i>
+                  </span>
+                  <span class="type-filter-text">Document</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="type-filter">
+                  <span class="filter-icon-wp">
+                    <i class="filter-icon fa fa-microphone"></i>
+                  </span>
+                  <span class="type-filter-text">Presentation</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="type-filter">
+                  <span class="filter-icon-wp">
+                    <i class="filter-icon fa fa-table"></i>
+                  </span>
+                  <span class="type-filter-text">Spreadsheet</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="type-filter">
+                  <span class="filter-icon-wp">
+                    <i class="filter-icon fa fa-video-camera"></i>
+                  </span>
+                  <span class="type-filter-text">Video</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="type-filter">
+                  <span class="filter-icon-wp">
+                    <i class="filter-icon fa fa-file-image-o"></i>
+                  </span>
+                  <span class="type-filter-text">Photo</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="type-filter">
+                  <span class="filter-icon-wp">
+                    <i class="filter-icon fa fa-link"></i>
+                  </span>
+                  <span class="type-filter-text">External Link</span>
+                  <span class="clear-filter">x</span>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-block">
+              <div class="filter-block-header">
+                <h3 class="filter-title">ADDITIONAL FILTERS</h3>
+              </div>
+              <ul class="filters">
+                <li class="filter">
+                  <div class="title-expander-wp">
+                    <span class="filter-title">Events</span>
+                    <span class="filter-expander"><i class="filter-expanded-icon fa fa-plus"></i></span>
+                  </div>
+                  <ul class="second-level-filter">
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">board of Boards </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span class="secondary-filter-title">Summit </span><span class="clear-filter">x</span></li>
+                  </ul>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">Company Spotlights</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">Force of Good Awards</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">Global Exchange</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter">
+                  <div class="title-expander-wp">
+                    <span class="filter-title">Strategic Investor Initiative</span>
+                    <span class="filter-expander"><i class="filter-expanded-icon fa fa-plus"></i></span>
+                  </div>
+                  <ul class="second-level-filter">
+                    <li class="single-filter secondary-filter"><span
+                      class="secondary-filter-title">CIF Presentations </span><span class="clear-filter">x</span></li>
+                    <li class="single-filter secondary-filter"><span
+                      class="secondary-filter-title">Calculators </span><span class="clear-filter">x</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-block staff-block">
+              <div class="filter-block-header">
+                <h3 class="filter-title">CECP STAFF RESOURCES</h3>
+              </div>
+              <ul class="filters">
+                <li class="filter single-filter">
+                  <span class="filter-title">Templates</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">Brand Identity</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">Messaging</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">Strategic Investor Initiative</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">Calendars</span>
+                  <span class="clear-filter">x</span>
+                </li>
+                <li class="filter single-filter">
+                  <span class="filter-title">General CECP Content </span>
+                  <span class="clear-filter">x</span>
+                </li>
+              </ul>
+            </div>
+            <div class="clear-filters-block">
+              <P class="clear-filters-text">X CLEAR ALL FILTERS</P>
             </div>
           </div>
         </div>
@@ -76,7 +244,7 @@
             </div>
             <div class="card-text-wp">
               <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
-              <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae cupiditate, dolorum earum ipsa modi </p>-->
+
               <button class="view-card">VIEW</button>
             </div>
           </div>
@@ -87,7 +255,6 @@
             </div>
             <div class="card-text-wp">
               <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
-              <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae cupiditate, dolorum earum ipsa modi </p>-->
               <button class="view-card">VIEW</button>
             </div>
           </div>
@@ -98,7 +265,6 @@
             </div>
             <div class="card-text-wp">
               <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
-              <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae cupiditate, dolorum earum ipsa modi </p>-->
               <button class="view-card">VIEW</button>
             </div>
           </div>
@@ -109,7 +275,106 @@
             </div>
             <div class="card-text-wp">
               <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
-              <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae cupiditate, dolorum earum ipsa modi </p>-->
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
+              <button class="view-card">VIEW</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag"><i class="fa fa-video-camera"></i></div>
+            <div class="card-img-wp">
+              <img src="/assets/img/index/card-img.jpg" alt="card image">
+            </div>
+            <div class="card-text-wp">
+              <p class="card-title">Business Imperative for corporate Societal Investment: Brand & Reputation</p>
               <button class="view-card">VIEW</button>
             </div>
           </div>
@@ -125,6 +390,7 @@
 <!-- endbower -->
 
 <!-- inject:js -->
+<script src="assets/listing.js"></script>
 <!-- endinject -->
 </body>
 </html>
