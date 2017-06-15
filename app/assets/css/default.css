@@ -1161,4 +1161,152 @@ ul {
   cursor: pointer;
 }
 
+.category-details-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.category-details-modal .modal-wp {
+  background-color: #ffffff;
+  font-size: 0;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  position: relative;
+  width: 300px;
+}
+
+.category-details-modal .modal-wp .close-modal-btn {
+  background-color: #7e8892;
+  border-radius: 50%;
+  height: 2.5rem;
+  position: absolute;
+  right: -1rem;
+  top: 0.5rem;
+  width: 2.5rem;
+}
+
+.category-details-modal .modal-wp .close-modal-btn:hover {
+  cursor: pointer;
+}
+
+.category-details-modal .modal-wp .close-modal-btn .close-modal-icon {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  padding-left: 0.8rem;
+}
+
+.category-details-modal .modal-wp .img-container {
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.category-details-modal .modal-wp .img-container .tag {
+  background-color: #00a7b5;
+  border-radius: 50%;
+  height: 3rem;
+  position: absolute;
+  right: -1.5rem;
+  bottom: -1.5rem;
+  width: 3rem;
+}
+
+.category-details-modal .modal-wp .img-container .tag i {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  left: 50%;
+  margin-left: -7px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+}
+
+.category-details-modal .modal-wp .img-container img {
+  width: 100%;
+}
+
+.category-details-modal .modal-wp .description-container {
+  margin: 0 auto;
+}
+
+.category-details-modal .modal-wp .description-container .resource-title {
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options {
+  margin-bottom: 2rem;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li {
+  color: #00a7b5;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li:hover {
+  cursor: pointer;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li .options-text {
+  display: none;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details {
+  color: #00aeef;
+  float: right;
+  font-size: 1.4rem;
+  margin-right: 0;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details i {
+  display: none;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details .options-text {
+  display: inline-block;
+}
+
+.category-details-modal .modal-wp .description-container .resource-description {
+  color: #7e8890;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  display: block;
+  /* Fallback for non-webkit */
+  hyphens: auto;
+  display: -webkit-box;
+  max-width: 300px;
+  height: 288px;
+  /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-line-clamp: 12;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.category-details-modal .modal-wp .description-container .resource-description::after {
+  content: '...';
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  font-size: 2rem;
+  color: #00a7b5;
+}
+
 /*# sourceMappingURL=default.css.map */

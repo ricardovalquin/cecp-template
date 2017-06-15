@@ -33,3 +33,12 @@ $('.clear-filters-block').click(function () {
   var activeFilters = filtersWp.find('.filter-active');
   activeFilters.removeClass('filter-active');
 });
+
+$('.view-card').click(function () {
+  $('.category-details-modal').css('display', 'block');
+
+});
+
+$('.close-modal-btn').click(function() {
+  $('.category-details-modal').css('display', 'none');
+});

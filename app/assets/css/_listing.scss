@@ -368,3 +368,156 @@
     }
   }
 }
+
+.category-details-modal {
+  $font-size: 16px;
+  $line-height: 1.5;
+  $lines-to-show: 12;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .modal-wp {
+    background-color: #ffffff;
+    font-size: 0;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    position: relative;
+    width: 300px;
+
+    .close-modal-btn {
+      background-color: rgb(126, 136, 146);
+      border-radius: 50%;
+      height: 2.5rem;
+      position: absolute;
+      right: -1rem;
+      top: 0.5rem;
+      width: 2.5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .close-modal-icon {
+        color: #ffffff;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding-left: 0.8rem;
+      }
+    }
+
+    .img-container {
+      margin: 0 auto 2rem;
+      position: relative;
+      //width: 90%;
+
+      .tag {
+        background-color: $main-green-color;
+        border-radius: 50%;
+        height: 3rem;
+        position: absolute;
+        right: -1.5rem;
+        bottom: -1.5rem;
+        width: 3rem;
+
+        i {
+          color: #ffffff;
+          font-size: 1.6rem;
+          font-weight: 700;
+          left: 50%;
+          margin-left: -7px;
+          margin-top: -8px;
+          position: absolute;
+          top: 50%;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .description-container {
+      margin: 0 auto;
+
+      .resource-title {
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+      }
+
+      .modal-options {
+        margin-bottom: 2rem;
+
+        .options-list {
+          li {
+            color: $main-green-color;
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-right: 2rem;
+            margin-top: 1.5rem;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            .options-text {
+              display: none;
+            }
+
+            &.full-details {
+              color: $main-blue-color;
+              float: right;
+              font-size: 1.4rem;
+              margin-right: 0;
+              i {
+                display: none;
+              }
+
+              .options-text {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      .resource-description {
+
+        color: $light-text-color;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        display: block; /* Fallback for non-webkit */
+        hyphens: auto;
+        display: -webkit-box;
+        max-width: 300px;
+        height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+        margin: 0 auto;
+        font-size: $font-size;
+        line-height: $line-height;
+        -webkit-line-clamp: $lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 1rem;
+        position: relative;
+
+        &::after {
+          content: '...';
+          position: absolute;
+          bottom: 0;
+          right: 5px;
+          font-size: 2rem;
+          color: $main-green-color;
+        }
+      }
+    }
+  }
+}
