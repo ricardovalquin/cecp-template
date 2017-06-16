@@ -1028,6 +1028,7 @@ ul {
 
 .listing-resources-section .filters-section .type-filters-list .type-filter:hover {
   color: #00a7b5;
+  cursor: pointer;
 }
 
 .listing-resources-section .filters-section .type-filters-list .type-filter:hover .filter-icon-wp {
@@ -1311,6 +1312,14 @@ ul {
   }
 }
 
+.category-details-modal .modal-wp .description-container .modal-options .options-list li a {
+  text-decoration: none;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li a:visited, .category-details-modal .modal-wp .description-container .modal-options .options-list li a:visited, .category-details-modal .modal-wp .description-container .modal-options .options-list li a:active, .category-details-modal .modal-wp .description-container .modal-options .options-list li a:link {
+  color: #00a7b5;
+}
+
 .category-details-modal .modal-wp .description-container .modal-options .options-list li:hover {
   cursor: pointer;
 }
@@ -1336,6 +1345,14 @@ ul {
   .category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details {
     font-size: 1.2rem;
   }
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details a {
+  text-decoration: none;
+}
+
+.category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details a:visited, .category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details a:visited, .category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details a:active, .category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details a:link {
+  color: #00aeef;
 }
 
 .category-details-modal .modal-wp .description-container .modal-options .options-list li.full-details i {
@@ -1389,6 +1406,31 @@ ul {
     margin: 0 0 3rem;
     max-width: 430px;
   }
+}
+
+.main-content.resource-view {
+  background-color: #f2f2f2;
+  padding: 2rem 0;
+}
+
+.main-content .category-title-section {
+  padding-bottom: 1rem;
+}
+
+.main-content .content-section {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 94%;
+}
+
+.main-content .content-section .resource-hero-img-wp img {
+  width: 100%;
+}
+
+.main-content .content-section .hero-info-wp {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=default.css.map */

@@ -231,6 +231,7 @@
 
         &:hover {
           color: $main-green-color;
+          cursor: pointer;
 
           .filter-icon-wp {
             background-color: $main-green-color;
@@ -502,6 +503,13 @@
               margin-right: 2.5rem;
             }
 
+            a {
+              text-decoration: none;
+              &:visited, &:visited,  &:active, &:link {
+                color: $main-green-color;
+              }
+            }
+
             &:hover {
               cursor: pointer;
             }
@@ -520,6 +528,13 @@
               margin-right: 0;
               @media screen and (min-width: $md-min-width) {
                 font-size: 1.2rem;
+              }
+
+              a {
+                text-decoration: none;
+                &:visited, &:visited,  &:active, &:link {
+                  color: $main-blue-color;
+                }
               }
 
               i {
