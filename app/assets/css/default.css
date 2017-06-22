@@ -1417,16 +1417,41 @@ ul {
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .main-content .category-title-section .category-title {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-content .category-title-section .cta-wp {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
 .main-content .content-section {
   background-color: #ffffff;
   box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.19);
   margin: 0 auto;
+  max-width: 1200px;
   padding: 2rem 0;
   width: 94%;
 }
 
 .main-content .content-section .resource-hero-img-wp {
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content .content-section .resource-hero-img-wp {
+    float: right;
+    margin-left: 2rem;
+    width: 36%;
+  }
 }
 
 .main-content .content-section .resource-hero-img-wp img {
@@ -1444,18 +1469,25 @@ ul {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .main-content .content-section .hero-info-wp .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
 .main-content .content-section .hero-info-wp .resource-options {
   margin-bottom: 2rem;
 }
 
 .main-content .content-section .hero-info-wp .resource-options .options-list .user-option {
   display: inline-block;
-  font-size: 2rem;
-  margin-right: 5rem;
+  font-size: 1.2rem;
+  margin-right: 2rem;
 }
 
 .main-content .content-section .hero-info-wp .resource-options .options-list .user-option a:visited, .main-content .content-section .hero-info-wp .resource-options .options-list .user-option a:visited, .main-content .content-section .hero-info-wp .resource-options .options-list .user-option a:active, .main-content .content-section .hero-info-wp .resource-options .options-list .user-option a:link {
-  color: #00a7b5;
+  color: #00aeef;
+  text-decoration: none;
 }
 
 .main-content .content-section .hero-info-wp .resource-options .options-list .user-option a:hover {
@@ -1466,6 +1498,15 @@ ul {
 
 .main-content .content-section .hero-info-wp .resource-options .options-list .user-option .options-text {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content .content-section .hero-info-wp .resource-options .options-list .user-option .options-text {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
 }
 
 .main-content .content-section .hero-info-wp .hero-description {
@@ -1484,6 +1525,14 @@ ul {
   font-size: 2rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content .content-section .resource-content-wp .content-section-title {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .main-content .content-section .resource-content-wp .content-section-text {
@@ -1535,6 +1584,14 @@ ul {
 
 .main-content .content-section .resource-content-wp .content-img-wp {
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content .content-section .resource-content-wp .content-img-wp {
+    float: right;
+    margin-left: 3rem;
+    width: 40%;
+  }
 }
 
 .main-content .content-section .resource-content-wp .content-img-wp img {
